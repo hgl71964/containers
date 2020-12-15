@@ -29,4 +29,5 @@ COPY ./src .
 ### end of python packages
 
 #  TODO: add a bash file to auto config: 1. source dot file; 2. generate ssh key
+ENV ZSH_THEME agnoster
 CMD ["zsh"]
