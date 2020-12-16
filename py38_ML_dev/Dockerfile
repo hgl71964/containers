@@ -30,4 +30,4 @@ COPY ./src .
 
 #  TODO: add a bash file to auto config: 1. source dot file; 2. generate ssh key; 3. config name and email in git; 4. shell colouring
 #  ENV ZSH_THEME agnoster
-CMD ["zsh"]
+ENTRYPOINT ["zsh"]
