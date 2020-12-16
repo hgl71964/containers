@@ -1,6 +1,3 @@
-# example of adding python path
-export PYTHONPATH=/usr
-
 ### command short hand
 alias ll="ls -al"
 alias tre="tree -CL 2"
