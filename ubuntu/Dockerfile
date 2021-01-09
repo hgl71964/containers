@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-WORKDIR /usr/guoliang
+WORKDIR /root
 
 ###  essential command lines
 RUN ["apt-get", "update"]
