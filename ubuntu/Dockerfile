@@ -8,8 +8,8 @@ RUN ["apt-get", "install", "-y", "zsh", "wget", "sudo"]
 RUN ["apt-get", "install", "-y", "git"]
 
 # the -y is assumed to answer yes
-RUN ["apt-get", "install", "-y","vim"] 
-RUN ["apt-get", "install", "tree"] 
+RUN ["apt-get", "install", "-y", "vim"] 
+RUN ["apt-get", "install", "-y", "tree"] 
 
 # install zsh
 RUN wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh || true
