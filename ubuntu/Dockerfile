@@ -11,8 +11,8 @@ RUN ["apt-get", "install", "-y", "git"]
 RUN ["apt-get", "install", "-y", "vim-gtk"]  # vim-gtk enable vim with python support
 RUN ["apt-get", "install", "-y", "tree"] 
 
-# install zsh
-RUN wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh || true
+# install oh-my-zsh
+# RUN wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh || true
 ###  end of command lines
 
 ###  get dot config files
