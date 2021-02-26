@@ -8,7 +8,7 @@ RUN ["apt-get", "install", "-y", "zsh", "wget", "sudo"]
 RUN ["apt-get", "install", "-y", "git"]
 
 # the -y is assumed to answer yes
-RUN ["apt-get", "install", "-y", "vim"] 
+RUN ["apt-get", "install", "-y", "vim-gtk"]  # vim-gtk enable vim with python support
 RUN ["apt-get", "install", "-y", "tree"] 
 
 # install zsh
