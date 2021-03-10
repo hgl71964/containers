@@ -1,7 +1,25 @@
-#!/bin/bash
+#! /bin/bash
 
 # this script automates setting up the environment
+# ---------------------------------------------------------------------------------------
 
-cp dot_config/.vimrc dot_config/.zshrc .
-source .zshrc
+# installation
 apt upgrade --yes
+
+# ---------------------------------------------------------------------------------------
+
+# make dot files
+if [ ! -d "$dot_config" ]; then
+    git clone --depth=1 https://github.com/hgl71964/dot_config.git
+fi
+cp dot_config/.vimrc dot_config/.zshrc .
+
+# ---------------------------------------------------------------------------------------
+
+# make vim
+if [ ! -d "$.vim" ]; then
+    mkdir -p .vim/pack/autoplugs
+fi
+
+
+source .zshrc
