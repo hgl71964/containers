@@ -10,11 +10,9 @@ RUN ["apt", "install", "-y", "git"]
 RUN ["apt", "install", "-y", "python3.8"]
 RUN ["apt", "install", "tree"]
 
-# ARG DEBIAN_FRONTEND=noninteractive
-
-# needed when install
+ARG DEBIAN_FRONTEND=noninteractive
 ENV TZ=Europe/London
-
+# needed when install
 RUN ["apt", "install", "-y", "vim-gtk"]  # vim-gtk enable vim with python support
 
 # install zsh
