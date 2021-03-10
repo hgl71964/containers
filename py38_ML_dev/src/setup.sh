@@ -2,6 +2,8 @@
 
 # this script automates setting up the environment
 
+# the current script path
+SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 
 # ---------------------------------------------------------------------------------------
 # installation
@@ -34,6 +36,11 @@ if [ ! -d "$git_repo" ]; then
     git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions.git git_repo/zsh-autosuggestions
 fi
 
+# ---------------------------------------------------------------------------------------
+# cli for linux sys
+
+echo 'ls="ls --color=auto"' >> .zshrc
+echo 'grep="grep --color=auto"' >> .zshrc
 source .zshrc
 
 # ---------------------------------------------------------------------------------------
@@ -48,6 +55,3 @@ git clone --depth=1 https://github.com/mg979/vim-visual-multi.git .vim/pack/auto
 git clone --depth=1 https://github.com/ycm-core/YouCompleteMe.git .vim/pack/autoplugs/start/ycm
 
 # ---------------------------------------------------------------------------------------
-
-
-
