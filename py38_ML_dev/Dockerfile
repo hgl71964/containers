@@ -1,19 +1,20 @@
-FROM python:3.8
+FROM ubuntu:latest
 
 WORKDIR /root
 
 
 ###  essential command lines
 RUN ["apt-get", "update"]
-RUN ["apt-get", "install", "-y", "zsh"]
+RUN ["apt-get", "install", "-y", "zsh", "wget", "sudo"]
 RUN ["apt-get", "install", "-y", "git"]
+RUN ["apt", "install", "-y", "python3.8"]
 
 # the -y is assumed to answer yes
-RUN ["apt-get", "install", "-y","vim"] 
-RUN ["apt-get", "install", "tree"] 
+RUN ["apt-get", "install", "-y", "vim-gtk"]  # vim-gtk enable vim with python support
+RUN ["apt-get", "install", "tree"]
 
 # install zsh
-RUN wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh || true
+# RUN wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh || true
 ###  end of command lines
 
 
