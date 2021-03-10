@@ -39,8 +39,8 @@ fi
 # ---------------------------------------------------------------------------------------
 # cli for linux sys
 
-echo 'ls="ls --color=auto"' >> .zshrc
-echo 'grep="grep --color=auto"' >> .zshrc
+echo 'alias ls="ls --color=auto"' >> .zshrc
+echo 'alias grep="grep --color=auto"' >> .zshrc
 source .zshrc
 
 # ---------------------------------------------------------------------------------------
