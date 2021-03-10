@@ -8,10 +8,11 @@ RUN ["apt-get", "update"]
 RUN ["apt", "install", "-y", "zsh", "wget", "sudo"]
 RUN ["apt", "install", "-y", "git"]
 RUN ["apt", "install", "-y", "python3.8"]
-
-# the -y is assumed to answer yes
-RUN ["apt", "install", "-y", "vim-gtk"]  # vim-gtk enable vim with python support
 RUN ["apt", "install", "tree"]
+
+ARG DEBIAN_FRONTEND=noninteractive
+ENV TZ=Europe/London  # needed when install
+RUN ["apt", "install", "-y", "vim-gtk"]  # vim-gtk enable vim with python support
 
 # install zsh
 # RUN wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh || true
