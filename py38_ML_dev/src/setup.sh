@@ -9,7 +9,7 @@ SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 # installation
 
 apt upgrade --yes
-apt install python3-pip
+apt install python3-pip --yes
 
 apt install sudo --yes
 sudo apt-get update
