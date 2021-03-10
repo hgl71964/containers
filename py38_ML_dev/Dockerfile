@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:20.04
 
 WORKDIR /root
 
@@ -7,7 +7,7 @@ WORKDIR /root
 RUN ["apt-get", "update"]
 RUN ["apt", "install", "-y", "zsh", "wget", "sudo"]
 RUN ["apt", "install", "-y", "git"]
-# RUN ["apt", "install", "-y", "python3.8"]
+# RUN ["apt", "install", "-y", "python3.8"]  # ubuntu may have built-in python3.8
 RUN ["apt", "install", "tree"]
 
 ARG DEBIAN_FRONTEND=noninteractive
