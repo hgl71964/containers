@@ -25,6 +25,15 @@ echo 'PROMPT="%B%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}
 
 # clean up
 rm -rf dot_config
+
+# ---------------------------------------------------------------------------------------
+# make zsh tools
+if [ ! -d "$git_repo" ]; then
+    mkdir git_repo
+    git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git git_repo/zsh-syntax-highlighting
+    git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions.git git_repo/zsh-autosuggestions
+fi
+
 source .zshrc
 
 # ---------------------------------------------------------------------------------------

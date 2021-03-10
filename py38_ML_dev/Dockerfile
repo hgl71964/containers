@@ -18,10 +18,6 @@ RUN ["apt-get", "install", "tree"]
 ###  end of command lines
 
 
-###  get dot config files
-RUN ["git","clone", "https://github.com/hgl71964/dot_config.git"]
-COPY ./src .
-###  end of dot config files
 
 
 ### install python packages
@@ -31,4 +27,8 @@ COPY ./src .
 
 #  TODO: add a bash file to auto config: 1. source dot file; 2. generate ssh key; 3. config name and email in git; 4. shell colouring
 #  ENV ZSH_THEME agnoster
+
+# setup bash script
+COPY ./src .
+
 ENTRYPOINT ["zsh"]
