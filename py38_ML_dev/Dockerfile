@@ -13,7 +13,7 @@ RUN ["apt", "install", "tree"]
 ARG DEBIAN_FRONTEND=noninteractive
 ENV TZ=Europe/London
 # needed when install
-RUN ["apt", "install", "-y", "vim-gtk"]  # vim-gtk enable vim with python support
+RUN ["apt", "install", "-y", "vim-nox"]
 
 # install zsh
 # RUN wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh || true

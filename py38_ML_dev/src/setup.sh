@@ -16,6 +16,9 @@ sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get dist-upgrade
 
+# for YCM in vim
+apt install build-essential cmake vim-nox python3-dev --yes
+
 # ---------------------------------------------------------------------------------------
 # make dot files
 
@@ -57,7 +60,6 @@ git clone --depth=1 https://github.com/mg979/vim-visual-multi.git .vim/pack/auto
 git clone --depth=1 https://github.com/ycm-core/YouCompleteMe.git .vim/pack/autoplugs/start/ycm
 
 # ---------------------------------------------------------------------------------------
-# python3.8, the above setting gives python 3.8.5 with pip
 
 
 # ---------------------------------------------------------------------------------------
