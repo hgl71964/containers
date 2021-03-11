@@ -16,9 +16,6 @@ sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get dist-upgrade
 
-# for YCM in vim
-apt install build-essential cmake vim-nox python3-dev --yes
-
 # ---------------------------------------------------------------------------------------
 # make dot files
 
