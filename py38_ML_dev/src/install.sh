@@ -6,6 +6,10 @@
 SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 
 # ---------------------------------------------------------------------------------------
+# build vim from source if needed
+# https://github.com/ycm-core/YouCompleteMe/wiki/Building-Vim-from-source
+
+# ---------------------------------------------------------------------------------------
 # for YCM in vim
 
 git clone --depth=1 --recurse-submodules https://github.com/ycm-core/YouCompleteMe.git .vim/pack/autoplugs/start/ycm
