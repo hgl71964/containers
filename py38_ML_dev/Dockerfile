@@ -1,4 +1,6 @@
-FROM ubuntu:20.04
+# ubuntu cannot install torch
+# inherit directly from pytorch/pytorch
+FROM ubuntu:20.04 
 
 WORKDIR /root
 
