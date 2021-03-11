@@ -32,5 +32,6 @@ RUN ["apt", "install", "-y", "vim-gtk"]  # vim-gtk enable vim with python suppor
 
 # setup bash script
 COPY ./src .
+RUN ["chmod", "+x", "setup.sh"]
 
 ENTRYPOINT ["zsh"]
