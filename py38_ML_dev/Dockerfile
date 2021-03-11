@@ -33,5 +33,6 @@ RUN ["apt", "install", "-y", "vim-nox"]
 # setup bash script
 COPY ./src .
 RUN ["chmod", "+x", "setup.sh"]
+RUN ["chmod", "+x", "install.sh"]
 
 ENTRYPOINT ["zsh"]
