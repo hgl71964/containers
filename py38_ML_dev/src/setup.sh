@@ -57,6 +57,7 @@ git clone --depth=1 https://github.com/mg979/vim-visual-multi.git .vim/pack/auto
 git clone --depth=1 https://github.com/ycm-core/YouCompleteMe.git .vim/pack/autoplugs/start/ycm
 
 # ---------------------------------------------------------------------------------------
-# python3.8
+# python3.8, the above setting gives python 3.8.5 with pip
+
 
 # ---------------------------------------------------------------------------------------
