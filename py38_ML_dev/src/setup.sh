@@ -52,6 +52,7 @@ if [ ! -d "$.vim" ]; then
     mkdir -p .vim/pack/autoplugs/start
 fi
 
+# git clone will fail if folder already exists
 git clone --depth=1 https://github.com/morhetz/gruvbox.git .vim/pack/autoplugs/start/gruvbox
 git clone --depth=1 https://github.com/mg979/vim-visual-multi.git .vim/pack/autoplugs/start/visual_multi
 
