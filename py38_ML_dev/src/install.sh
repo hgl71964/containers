@@ -19,3 +19,9 @@ apt install mono-complete golang nodejs default-jdk npm --yes
 python3 ~/.vim/pack/autoplugs/start/ycm/install.py --all
 
 # ---------------------------------------------------------------------------------------
+# for python syntax highlight in vim 
+
+git clone --depth=1 https://github.com/vim-python/python-syntax.git .vim/pack/autoplugs/start/python-syntax
+echo 'let g:python_highlight_all = 1' >> ~/.vimrc
+
+# ---------------------------------------------------------------------------------------
