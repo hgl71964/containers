@@ -18,6 +18,8 @@ apt install mono-complete golang nodejs default-jdk npm --yes
 
 python3 ~/.vim/pack/autoplugs/start/ycm/install.py --all
 
+echo 'let g:ycm_autoclose_preview_window_after_insertion = 1' >> ~/.vimrc  # the window of a function description auto-close
+
 # ---------------------------------------------------------------------------------------
 # for python syntax highlight in vim 
 
