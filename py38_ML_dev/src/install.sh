@@ -31,5 +31,11 @@ echo 'let g:python_highlight_all = 1' >> ~/.vimrc
 
 git clone --depth=1 https://github.com/Yggdroot/LeaderF.git .vim/pack/autoplugs/start/LeaderF
 
+# 
 # ---------------------------------------------------------------------------------------
+# for async git diff
 
+git clone --depth=1 https://github.com/mhinz/vim-signify.git .vim/pack/autoplugs/start/LeaderF
+---------------------------------------------------------------------------------------
+
+https://github.com/mhinz/vim-signify.git
