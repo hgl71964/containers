@@ -27,3 +27,9 @@ git clone --depth=1 https://github.com/vim-python/python-syntax.git .vim/pack/au
 echo 'let g:python_highlight_all = 1' >> ~/.vimrc
 
 # ---------------------------------------------------------------------------------------
+# for fizzy file search
+
+git clone --depth=1 https://github.com/Yggdroot/LeaderF.git .vim/pack/autoplugs/start/LeaderF
+
+# ---------------------------------------------------------------------------------------
+
