@@ -36,4 +36,9 @@ git clone --depth=1 https://github.com/Yggdroot/LeaderF.git .vim/pack/autoplugs/
 # for async git diff
 
 git clone --depth=1 https://github.com/mhinz/vim-signify.git .vim/pack/autoplugs/start/vim-signify
----------------------------------------------------------------------------------------
+
+# ---------------------------------------------------------------------------------------
+# for nerdtree
+
+git clone --depth=1 https://github.com/preservim/nerdtree.git .vim/pack/autoplugs/start/nerdtree
+#---------------------------------------------------------------------------------------
