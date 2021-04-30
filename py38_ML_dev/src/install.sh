@@ -15,7 +15,13 @@ SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 git clone --depth=1 --recurse-submodules https://github.com/ycm-core/YouCompleteMe.git .vim/pack/autoplugs/start/ycm
 apt install build-essential cmake vim-nox python3-dev --yes
 apt install mono-complete golang nodejs default-jdk npm --yes
-# TODO need to cd into ycm dir to exec: git submodule update --init --recursive and leave
+
+# TODO check if this works
+# need to go to ycm dir to run git submodule update
+cd ~/.vim/pack/autoplugs/start/ycm
+git submodule update --init --recursive
+cd ~
+
 python3 ~/.vim/pack/autoplugs/start/ycm/install.py --all
 
 echo 'let g:ycm_autoclose_preview_window_after_insertion = 1' >> ~/.vimrc  # the window of a function description auto-close
