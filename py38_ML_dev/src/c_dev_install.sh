@@ -11,7 +11,8 @@ SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 
 # ---------------------------------------------------------------------------------------
 # common dev tool
-apt install g++
-apt install cmake
+apt install cmake g++ --yes
 
-
+# ---------------------------------------------------------------------------------------
+# common network tool
+apt install iproute2 iptables --yes
