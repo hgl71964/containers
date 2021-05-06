@@ -39,7 +39,6 @@ RUN ["apt", "install", "-y", "vim-nox"]
 COPY ./src .
 RUN ["chmod", "+x", "setup.sh"]
 RUN ["chmod", "+x", "vim_install.sh"]
-RUN ["chmod", "+x", "vim_install.sh"]
 RUN ["chmod", "+x", "c_dev_install.sh"]
 
 ENTRYPOINT ["zsh"]
