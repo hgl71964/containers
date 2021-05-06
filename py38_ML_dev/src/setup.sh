@@ -12,9 +12,9 @@ apt upgrade --yes
 apt install python3-pip --yes
 
 apt install sudo --yes
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get dist-upgrade
+sudo apt-get update --yes
+sudo apt-get upgrade --yes
+sudo apt-get dist-upgrade --yes
 
 # ---------------------------------------------------------------------------------------
 # make dot files
@@ -43,7 +43,6 @@ fi
 
 echo 'alias ls="ls --color=auto"' >> .zshrc
 echo 'alias grep="grep --color=auto"' >> .zshrc
-source .zshrc
 
 # ---------------------------------------------------------------------------------------
 # make vim
