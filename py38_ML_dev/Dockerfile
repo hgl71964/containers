@@ -1,6 +1,6 @@
 # ubuntu cannot install torch
 # inherit directly from pytorch/pytorch
-FROM ubuntu:20.04 
+FROM ubuntu:20.04
 
 WORKDIR /root
 
@@ -35,6 +35,8 @@ RUN ["apt", "install", "-y", "vim-nox"]
 # setup bash script
 COPY ./src .
 RUN ["chmod", "+x", "setup.sh"]
-RUN ["chmod", "+x", "install.sh"]
+RUN ["chmod", "+x", "vim_install.sh"]
+RUN ["chmod", "+x", "vim_install.sh"]
+RUN ["chmod", "+x", "c_dev_install.sh"]
 
 ENTRYPOINT ["zsh"]
