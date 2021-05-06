@@ -21,6 +21,9 @@ RUN ["apt", "install", "-y", "vim-nox"]
 # RUN wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh || true
 ###  end of command lines
 
+# linux in docker is runned in reduced mode
+# if want full capacity: docker run -it --privileged image_name
+
 
 
 
