@@ -16,7 +16,6 @@ git clone --depth=1 --recurse-submodules https://github.com/ycm-core/YouComplete
 apt install build-essential cmake vim-nox python3-dev --yes
 apt install mono-complete golang nodejs default-jdk npm --yes
 
-# TODO check if this works
 # need to go to ycm dir to run git submodule update
 cd ~/.vim/pack/autoplugs/start/ycm
 git submodule update --init --recursive
