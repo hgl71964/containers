@@ -9,6 +9,19 @@ SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 # build vim from source if needed
 # https://github.com/ycm-core/YouCompleteMe/wiki/Building-Vim-from-source
 
+# make .vim
+
+if [ ! -d "$.vim" ]; then
+    mkdir -p .vim/pack/autoplugs/start
+fi
+
+# ---------------------------------------------------------------------------------------
+# basic package
+
+# git clone will fail if folder already exists
+git clone --depth=1 https://github.com/morhetz/gruvbox.git .vim/pack/autoplugs/start/gruvbox
+git clone --depth=1 https://github.com/mg979/vim-visual-multi.git .vim/pack/autoplugs/start/visual_multi
+
 # ---------------------------------------------------------------------------------------
 # for YCM in vim
 
