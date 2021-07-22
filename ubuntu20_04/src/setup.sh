@@ -42,7 +42,12 @@ echo 'alias ls="ls --color=auto"' >> .zshrc
 echo 'alias grep="grep --color=auto"' >> .zshrc
 
 # ---------------------------------------------------------------------------------------
+# example of installing python3
+# apt install python3-pip
 
+# example of un-install python3
+# apt remove
+# apt autoremove --purge
 
 # ---------------------------------------------------------------------------------------
 

@@ -11,6 +11,7 @@ Run apt update --yes && apt install --yes \
     wget \
     sudo \
     git \
+    curl \
     tree
 
 # install vim8.1 needed when install
