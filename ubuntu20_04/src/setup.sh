@@ -46,7 +46,7 @@ echo 'alias grep="grep --color=auto"' >> .zshrc
 # apt install python3-pip
 
 # example of un-install python3
-# apt remove
+# apt remove <package name>
 # apt autoremove --purge
 
 # ---------------------------------------------------------------------------------------
