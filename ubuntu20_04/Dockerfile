@@ -5,16 +5,19 @@ FROM ubuntu:20.04
 WORKDIR /root
 
 ###  essential command lines
-RUN apt-get update -yes
 
-Run apt update --yes && \
-    apt install -y zsh wget sudo git tree
+Run apt update --yes && apt install --yes \
+    zsh \
+    wget \
+    sudo \
+    git \
+    tree
 
 # install vim8.1 needed when install
 ARG DEBIAN_FRONTEND=noninteractive
 ENV TZ=Europe/London
 
-RUN apt install-y vim-nox
+RUN apt install --yes vim-nox
 
 COPY ./src .
 RUN chmod +x setup.sh
