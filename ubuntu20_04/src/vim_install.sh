@@ -36,20 +36,20 @@ cd ~
 
 python3 ~/.vim/pack/autoplugs/start/ycm/install.py --all
 
-echo 'let g:ycm_autoclose_preview_window_after_insertion = 1' >> ~/.vimrc  # the window of a function description auto-close
+#echo 'let g:ycm_autoclose_preview_window_after_insertion = 1' >> ~/.vimrc  # the window of a function description auto-close
 
 # ---------------------------------------------------------------------------------------
-# for python syntax highlight in vim 
+# for python syntax highlight in vim
 
 git clone --depth=1 https://github.com/vim-python/python-syntax.git .vim/pack/autoplugs/start/python-syntax
-echo 'let g:python_highlight_all = 1' >> ~/.vimrc
+#echo 'let g:python_highlight_all = 1' >> ~/.vimrc
 
 # ---------------------------------------------------------------------------------------
 # for fizzy file search
 
 git clone --depth=1 https://github.com/Yggdroot/LeaderF.git .vim/pack/autoplugs/start/LeaderF
 
-# 
+#
 # ---------------------------------------------------------------------------------------
 # for async git diff
 
