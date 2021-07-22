@@ -1,6 +1,0 @@
-#!/usr/bin/zsh
-
-rm .zshrc .vimrc
-cp dot_config/.vimrc dot_config/.zshrc .
-source .zshrc
-apt upgrade --yes
